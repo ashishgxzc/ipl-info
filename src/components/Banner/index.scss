@@ -1,0 +1,11 @@
+$full-height: 100vh;
+$full-width: 100vw;
+
+.banner-container{
+    height: $full-height;
+    width: $full-width;
+    img{
+        height: $full-height;
+        width: $full-width
+    }
+}

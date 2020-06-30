@@ -1,0 +1,168 @@
+.highlights{
+ padding: 40px 5%;
+ 
+ .headline{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: auto .5rem 3.2rem;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2rem;
+ }
+ .cards-container{
+     display: flex;
+     justify-content: flex-start;
+     overflow-x: auto;
+     overflow-y: visible;
+     padding: 20px 0px;
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        margin: 0px 10px;
+        padding: 0px;
+        transform: translateY(0);
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        &:hover{
+            transform: translateY(-10px);
+            transition: box-shadow .25s,transform .25s,-webkit-transform .25s;
+        }
+        .image-container{
+            position: relative;
+            img{
+                padding-top: 30px;
+            }
+            .player-cap{
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left:0;
+                color: #fff;
+                font-size: 0.9rem;
+                text-align: center;
+                text-transform: none;
+                transition: all .2s linear;
+                background-position: 100% 100%;
+                background-repeat: no-repeat;
+                padding: .2rem 0;
+                font-weight: 700;
+            }
+            .team-logo{
+                display: inline-block;
+                vertical-align: middle;
+                margin: 1rem 1rem 0 0;
+                height: 40px;
+                width: 40px;
+                position: absolute;
+                right: 0;
+                background-image: url('../../../assets//images//sprites/tLogo40x-sprite.png');
+                &.SRH{
+                    background-position: -80px -120px;
+                }
+                &.CSK{
+                    background-position: -40px 0px;
+                }
+                &.MI{
+                    background-position: -80px -80px;
+                }
+                &.KKR{
+                    background-position: -80px -40px;
+                }
+            }
+            &.orange-bg{
+                opacity: 1;
+                background: linear-gradient(to top right,#ff481e,#f7de06)
+            }
+            &.orange-bg:hover{
+                transition: opacity .3s ease-out;
+            }
+            &.purple-bg{
+                opacity: 1;
+                background: linear-gradient(to top right,#6807c0,#833bc5);
+            }
+            &.purple-bg:hover{
+                transition: opacity .3s ease-out;
+            }
+            &.highest-score-bg,
+            &.best-bowling-bg{
+                opacity: 1;
+                background: linear-gradient(to top right,#153074,#214bb5);
+            }
+            &.highest-score-bg:hover,
+            &.best-bowling-bg{
+                transition: opacity .3s ease-out;
+            }
+            &.most-valuable-player-bg{
+                opacity: 1;
+                background: linear-gradient(to top right,#f64563,#bf1e3a);
+            }
+            &.most-valuable-player:hover{
+                transition: opacity .3s ease-out;
+            }
+        }
+        .player-info{
+            padding: 10px 0px 20px 0px;
+            text-align: center;
+            width: 100%;
+            .player-firstname{
+                font-weight: 300;
+                font-size: 1.1rem;
+                color: #303030;
+            }
+            .player-lastname{
+                font-style: italic;
+                font-weight: 900;
+                color: #111;
+                font-size: 1.4rem;
+            }
+            .player-score{
+                color: #111;
+                font-size: 3.2rem;
+                line-height: 4.2rem;
+                display: block;
+                font-weight: 900;
+                margin-bottom: .5rem;
+            }
+            .player-score-type{
+                font-size: 0.8rem;
+                letter-spacing: .2rem;
+                color: #303030;
+                opacity: .7;
+                clear: both;
+                display: block;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+        .purple-cap{
+            background: #692f9e;
+        }
+        .orange-cap{
+            background: #ff481e;
+        }
+        .highest-score,
+        .best-bowling{
+            background: #19398a;
+        }
+        .most-valuable-player{
+            background: #df314f;
+        }
+    }
+ }
+ @media only screen and (max-width: 768px){
+    padding: 20px;
+ }
+}
