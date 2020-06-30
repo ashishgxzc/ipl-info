@@ -38,10 +38,11 @@
         overflow: hidden;
         &:hover{
             transform: translateY(-10px);
-            transition: box-shadow .25s,transform .25s,-webkit-transform .25s;
+            transition: box-shadow .25s,transform .25s, -webkit-transform .25s;
         }
         .image-container{
             position: relative;
+            -webkit-font-smoothing: antialiased;
             img{
                 padding-top: 20px;
             }
@@ -84,17 +85,19 @@
             }
             &.orange-bg{
                 opacity: 1;
-                background: linear-gradient(to top right,#ff481e,#f7de06)
+                background: linear-gradient(to top right,#ff481e,#f7de06);
             }
             &.orange-bg:hover{
-                transition: opacity .3s ease-out;
+                background: linear-gradient(to top right,#f7de06,#ff481e);
+                transition: opacity .5s ease-out;
             }
             &.purple-bg{
                 opacity: 1;
                 background: linear-gradient(to top right,#6807c0,#833bc5);
             }
             &.purple-bg:hover{
-                transition: opacity .3s ease-out;
+                transition: opacity .5s ease-out;
+                background: linear-gradient(to top right,#833bc5,#6807c0);
             }
             &.highest-score-bg,
             &.best-bowling-bg{
@@ -102,15 +105,17 @@
                 background: linear-gradient(to top right,#153074,#214bb5);
             }
             &.highest-score-bg:hover,
-            &.best-bowling-bg{
-                transition: opacity .3s ease-out;
+            &.best-bowling-bg:hover{
+                transition: opacity .5s ease-out;
+                background: linear-gradient(to top right,#214bb5,#153074);
             }
             &.most-valuable-player-bg{
                 opacity: 1;
                 background: linear-gradient(to top right,#f64563,#bf1e3a);
             }
             &.most-valuable-player:hover{
-                transition: opacity .3s ease-out;
+                transition: opacity .5s ease-out;
+                background: linear-gradient(to top right,#bf1e3a,#f64563);
             }
         }
         .player-info{
