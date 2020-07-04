@@ -66,3 +66,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### Todo
+
+1. Top 10 Teams
+2. Top 10 Batsman
+3. Top 10 bowler
+4. Extra runs conceded per team
+5. Plot a stacked bar chart of matches won of all teams over all the years of IPL.
+6. Plot the number of matches played per year of all the years in IPL.

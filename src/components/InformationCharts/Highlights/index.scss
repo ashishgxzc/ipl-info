@@ -25,6 +25,9 @@
      overflow-y: visible;
      padding: 20px 0px;
     .card{
+        width: 210px;
+        min-width: 210px;
+        max-width: 210px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -45,6 +48,8 @@
             -webkit-font-smoothing: antialiased;
             img{
                 padding-top: 20px;
+                max-height: 234px;
+                width: 100%;
             }
             .player-cap{
                 position: absolute;
