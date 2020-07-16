@@ -7,8 +7,9 @@ import './index.scss';
 function index() {
     return (
         <div className="footer-container">
-            <SocialLinks />
-            <TeamsLinks />
+            Footer content here
+            {/* <SocialLinks /> */}
+            {/* <TeamsLinks /> */}
         </div>
     )
 }
