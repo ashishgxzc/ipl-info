@@ -20,8 +20,8 @@ function Highlights() {
             const playerIdNameMapObj = {};
             await d3.csv(seasonCSV, (data) => seasonArr.push(data));
             await d3.csv(playerCSV, (data) => playerIdNameMapObj[data.Player_Id] = data.Player_Name);
-            console.log(seasonArr);
-            console.log(playerIdNameMapObj);
+            // console.log(seasonArr);
+            // console.log(playerIdNameMapObj);
 
             seasonArr.reverse();
             setSeasonData(seasonArr);

@@ -1,0 +1,21 @@
+.chart-container{
+    padding: 24px 40px;
+        
+    .headline{
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin: auto .5rem 3.2rem;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 2rem;
+    }
+}
